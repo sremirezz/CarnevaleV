@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CarnevaleDivan</title>
+<style>
+    #pj{
+        width: 400px;
+        background-color: brown;
+        margin:auto;
+        padding: 15px;
+    }
+    #history{
+        width:800px;
+        background-color: darkgray;
+        margin:auto;
+        padding: 15px;
+    }
+
+</style>
+<script>
+    let nombre1=prompt("Please, introduce your name");
+        if (nombre1=="guille" || nombre1=="Guille"){
+            alert ("Welcome, my dear enemy.");
+        }
+        else if (nombre1=="guillermo" || nombre1=="Guillermo"){
+            alert ("You can run, but not hide... blood on the water is coming to Venice.");
+        }
+         else if (nombre1=="noe" || nombre1=="Noe"  || nombre1=="Noé"){
+            alert ("BAM BAM BAMBAMBAMABMABMA BAMABAM TIRURIII TIRURIII NINO");
+        }
+         else if (nombre1=="nowi" || nombre1=="Nowi"){
+            alert ("Nowi?? que tipo de nombre es nowi!!!");      
+         }   
+        else if (nombre1=="Flauta" || nombre1=="Flautaman"){
+            alert ("De hamelín");      
+        }
+        else {
+            alert ("Biengvenutti "+nombre1+". Shall we begin?...");
+        }  
+    let gang=prompt("what is your favorite Carnevale Gang?").toLowerCase();
+        /*while (gang!="strigoi"|| gang!="vatican"|| gang!="rashaar"|| gang!="gifted"|| gang!="guild"|| gang!="patricians"|| gang!="doctors") {
+            let gang=prompt("This is not infinity, a carnavale gang pls...").toLowerCase();
+            Error en el bucle
+        }*/
+    let mood=prompt("How do u feel today? :) Happy/Rabid/Pulcinella/Conjurer/Sacred...").toLowerCase();
+        
+</script>
+</head>
+<body>
+    <div aling="center" id="pj">
+        <h1>Carnevale dinamyc website</h1></br>
+        <p>Hi there! This is a website about Carnevale Miniature Game</p><br>
+        <p>Dear <strong><script>document.write(nombre1);</script></strong>, member of the <strong><script>document.write(gang);</script></strong> gang. Perhaps, you feel a litte bit <i><script>document.write(mood);</script></i> today. But it is a sunny day in Venice, so lets vote!</p>
+    </div>
+    <div aling="left"><img id="simbolo1" width="200px" aling="left"></br><i><script>document.write(gang);</script></i></p></div>
+    <div aling="right"><img id="simbolo2" width="200px" aling="right"></br><i><script>document.write(gang);</script></i></p></div>
+       <script> 
+            if(gang=="strigoi"){
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/Strigoi.png", img2.src = "img/Strigoi.png";      
+            }
+            else if(gang=="vatican") {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/The Vatican.png" , img2.src = "img/The Vatican.png";      
+            }
+            else if(gang=="rashaar") {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/Rashaar.png", img2.src = "img/Rashaar.png";    
+            }
+            else if(gang=="gifted") {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/The Gifted.png", img2.src = "img/The Gifted.png";     
+            }
+            else if(gang=="patricians") {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/The Patricians.png", img2.src = "img/The Patricians.png";     
+            }
+            else if(gang=="doctors") {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/The Doctors.png", img2.src = "img/The Doctors.png";
+            }
+            else {
+            let img1 = document.getElementById("simbolo1"), img2 = document.getElementById("simbolo2");
+            img1.src = "img/The Guild.png", img2.src = "img/The Guild.png"      
+            }            
+
+        let villans=["Capodecina","Magi Rashaar","Doctor of Hospedale","Venetian Noble","Capitanno","Noble Strigoi","Pope"]
+        </script>
+            <div aling="center" id="history">
+                <hr>
+                <h2>A night full of shadows</h2>
+                <p>Increible dinamica begins... In venice, there is nowhere safe place. The streets pass around you, run or hide? Somewho or something is hunting tonight. Suddenly, a light dazzle you. A figure appears from a shadow, a <b><script>document.write(villans[0]);</script></b> following your steps... </p>
+</body>
+</html>
